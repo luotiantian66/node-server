@@ -7,7 +7,7 @@ routePath函数有两个参数：req，res。它解析了req的url，并与route
 （1）如果pathObj.pathname和routes中的对象可以匹配上，那么开始处理路由：
 routePath可以处理get和post请求，通过解析url将get的内容放入req.query中，通过监听data和end事件将post的内容放入body中。
 
-（2）否则认为是静态目录，并执行staticRoot函数：
+（2）如果pathObj.pathname和routes中的对象都匹配不上，则认为是静态目录，执行staticRoot函数：
 解析rul，利用fs模块读取文件。如果读不到，有报错功能。
 
 
