@@ -13,4 +13,4 @@ routePath可以处理get和post请求，通过解析url将get的内容放入req.
 
 PS：
 routes为一个对象，用来匹配路由，可以自行添加。
-parseBody函数是用来解析url中的query的，例如，它可以http://localhost:8888/select?name=a&id=5中“name=a&id=5“这部分转为对象。
+parseBody函数是用来解析url中的query的，例如，它可以localhost:8888/select?name=a&id=5中“name=a&id=5“这部分转为对象。
