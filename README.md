@@ -1,6 +1,6 @@
 # node-server
 
-## index.js为静态服务器。主要思路是，创建一个sever，server中执行routePath函数。
+### index.js为静态服务器。主要思路是，创建一个sever，server中执行routePath函数。
 
 routePath函数有两个参数：req，res。它解析了req的url，并与routes中的对象匹配，从而根据不同的匹配结果进行不同的操作。
 
